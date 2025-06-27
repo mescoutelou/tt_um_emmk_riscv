@@ -3,7 +3,7 @@ module Ram(
   input         clock,
                 reset,
                 io_b_port_valid,
-  input  [7:0]  io_b_port_addr,
+  input  [6:0]  io_b_port_addr,
   input  [3:0]  io_b_port_wen,
   input  [31:0] io_b_port_wdata,
   output [31:0] io_b_port_rdata
@@ -11,7 +11,7 @@ module Ram(
 
   RamSv #(
     .INIT_FILE("sw.ram.mem"),
-    .N_DATA(160),
+    .N_DATA(128),
     .N_DATA_BYTE(4)
   ) m_ram (
     .i_clock (clock),
