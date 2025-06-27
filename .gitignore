@@ -5,6 +5,8 @@ runs
 tt_submission
 src/user_config.json
 src/config_merged.json
+src/*.f
+src/extern_modules.sv
 test/sim_build
 test/__pycache__/
 test/results.xml
