@@ -106,8 +106,8 @@ module Sys(
          : _GEN_5 & _m_core_io_b_mem_valid),
     .io_b_port_addr
       (_m_bootloader_io_o_bl
-         ? _m_bootloader_io_b_mem_addr[8:2]
-         : _m_core_io_b_mem_addr[8:2]),
+         ? _m_bootloader_io_b_mem_addr[6:2]
+         : _m_core_io_b_mem_addr[6:2]),
     .io_b_port_wen
       (_m_bootloader_io_o_bl
          ? _m_ram_io_b_port_wen_T_1[3:0]
